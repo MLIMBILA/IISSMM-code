@@ -1,0 +1,122 @@
+/* General reset and styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* Align content vertically */
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+}
+
+/*body {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+    padding: 20px;
+}*/
+
+/* Heading styling */
+h1 {
+    font-size: 2em;
+    color: #1D2A62;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form styling */
+form {
+    width: 100%;
+    max-width: 500px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Input field styling */
+label {
+    font-size: 1em;
+    color: #333;
+    display: block;
+    margin: 10px 0 5px;
+}
+
+select, textarea, button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+select:focus, textarea:focus, button:focus {
+    border-color: #1D2A62;
+    outline: none;
+}
+
+/* Button styling */
+button {
+    background-color: #1D2A62;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #808080;/*#3355a5;*/
+}
+
+/* Mobile Adjustments */
+@media (max-width: 480px) {
+    form {
+        width: 90%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+}
+.footer {
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    background-color: #1D2A62;
+    color: #fff;
+    margin-top: 20px;
+}
+.session-info p {
+    margin-bottom: 1em; /* Adjust this value as needed */
+    line-height: 1; /* Adds spacing within each paragraph for better readability */
+}
+.thank-you-message {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 15px; /* Padding around the message */
+    margin: 20px 0; /* Margin to separate from other elements */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Center text */
+    font-size: 1.5em; /* Larger text */
+}
+
+.error-message {
+    background-color: #f44336; /* Red background for errors */
+    color: white; /* White text */
+    padding: 15px; /* Padding around the error */
+    margin: 20px 0; /* Margin to separate from other elements */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Center text */
+    font-size: 1.5em; /* Larger text */
+}
+

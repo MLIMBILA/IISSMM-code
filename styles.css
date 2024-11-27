@@ -1,0 +1,223 @@
+/* Universal reset to prevent default styling issues */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+}
+
+.topnav {
+    display: flex;
+    justify-content: center;
+    background-color: #1D2A62;
+    width: 100vw;       /* Full viewport width */
+    left: 0;            /* Align to the left edge */
+    right: 0;           /* Align to the right edge */
+    margin-bottom: 20px; /* Space below the topnav */
+    position: relative; /* Change fixed to relative */
+    z-index: 1000; /* Optional: Keep it on top of other content */
+}
+
+.topnav a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 15px;
+    flex-grow: 1; /* Ensure links have equal width */
+}
+
+.topnav a.split {
+    margin-left: auto;
+    flex-grow: 0; /* Keep "Help" on the right */
+}
+
+/* Center-align the container sections */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center; /* Center text within the container */
+}
+
+#slider, .slider {
+    margin-top: 40px; /* Increased space above the slider */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.slides {
+    display: flex;
+    overflow: hidden;
+    width: 80%;
+    max-width: 800px;
+    justify-content: center;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+}
+
+/* Center-align the contact form */
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.form-group {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+/* Center-align the footer */
+.footer {
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    background-color: #1D2A62;
+    color: #fff;
+    margin-top: 20px;
+}
+.home {
+    margin-bottom: 20px;
+    text-align: left;
+}
+.about {
+    margin-bottom: 20px;
+    text-align: left;
+}
+.services {
+    margin-bottom: 20px;
+    text-align: left;
+}
+.contact {
+    margin-bottom: 20px;
+    text-align: left;
+}
+/* Contact Section */
+#contact {
+    text-align: left;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+
+#contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    color: #333;
+}
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-group input, .phone-input select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    font-size: 15px;
+    width: 100%;
+     color: #000;
+}
+/*.form-group select {
+    padding: 20px;
+    border: 1px solid #1D2A62;
+    border-radius: 30px;
+    font-size: 15px;
+    width: 100%;
+     background-color: #bcbcbc;
+     color: #000;
+}*/
+ 
+.phone-input {
+    display: flex;
+    gap: 5px;
+}
+
+.phone-input select {
+    max-width: 35%;
+    flex: 1;
+}
+
+.phone-input input {
+    flex: 2;
+}
+
+button[type="submit"] {
+    padding: 12px;
+    background-color: #1D2A62;
+    border: none;
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #808080;/*#45a049;*/
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    #contact {
+        padding: 15px;
+    }
+    .phone-input {
+        flex-direction: column;
+    }
+}
+.thank-you-message {
+    background-color: white; /* Green background */
+    color: white; /* White text */
+    padding: 15px; /* Padding around the message */
+    margin: 20px 0; /* Margin to separate from other elements */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Center text */
+    font-size: 1.5em; /* Larger text */
+}
+
+.error-message {
+    background-color: #f44336; /* Red background for errors */
+    color: white; /* White text */
+    padding: 15px; /* Padding around the error */
+    margin: 20px 0; /* Margin to separate from other elements */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Center text */
+    font-size: 1.5em; /* Larger text */
+}
+
